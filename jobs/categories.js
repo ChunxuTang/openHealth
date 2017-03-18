@@ -3,7 +3,7 @@
 openHealth.getScript(['https://d3js.org/d3.v3.min.js'], function () {
   // Query first 1000 NY medicare inpatients data through SODA service.
   // Then, process and visualize the data.
-  openHealth.soda("NY Medicare Inpatient", function (inpatients) {
+  openHealth.soda("https://health.data.ny.gov/resource/2yck-xisk.json", function (inpatients) {
     visualize(process(inpatients));
   });
 
